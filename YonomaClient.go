@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"encoding/json"
 	"errors"
-	"fmt"
 	"io/ioutil"
 	"net/http"
 )
@@ -68,15 +67,15 @@ func (yc *YonomaClient) Request(method, endpoint string, data interface{}) (map[
 	return responseData, nil
 }
 
-func main() {
-	apiKey := "EY947F5EGSZ5TTPV2SEIGSD7F5OI4VFJFMGZZHZK"
-	client := NewYonomaClient(apiKey)
+// func main() {
+// 	apiKey := "EY947F5EGSZ5TTPV2SEIGSD7F5OI4VFJFMGZZHZK"
+// 	client := NewYonomaClient(apiKey)
 
-	response, err := client.Request("GET", "tags/list", nil)
-	if err != nil {
-		fmt.Println("Error:", err)
-		return
-	}
+// 	response, err := client.Request("GET", "tags/list", nil)
+// 	if err != nil {
+// 		fmt.Println("Error:", err)
+// 		return
+// 	}
 
-	fmt.Println("Response:", response)
-}
+// 	fmt.Println("Response:", response)
+// }
