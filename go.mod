@@ -1,3 +1,3 @@
-module github.com/naveentwinarcus/go-npm-new
+module github.com/SuthishTwinarcus/go-npm-new
 
 go 1.24.0
